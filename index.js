@@ -1,24 +1,24 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const mysql = require('mysql');
 const bodyParser = require('body-parser');
-const port = process.env.PORT || '8080';
-const router = express.Router();
 
-app.set('port', port);
 app.use(express.static(__dirname + '/dist'));
 
-app.get('/[^\.]+$', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'))
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+const port = process.env.PORT || '8080';
+const router = express.Router();
 app.use('/', router);
 
-app.listen(app.get('port'), function() {
-    console.log('Node app is running at localhost: ' + app.get('port'));
-});
+app.listen(port);
+console.log('Magic happens on port ' + port);
 
 function execSQLQuery(sqlQry, res) {
     const connection = mysql.createConnection({

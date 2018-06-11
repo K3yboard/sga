@@ -13,5 +13,17 @@
 }
 
 .links-nav a {
+  display: block;
   font-size: 12px;
 }
+
+.links-nav .col {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+a.btn.active {
+  background-color: #51d095;
+  letter-spacing: 2px;
+}
+

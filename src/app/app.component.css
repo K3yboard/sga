@@ -1,0 +1,64 @@
+h1 {
+  margin: 20px 0;
+  text-shadow: 2px 2px 7px #000000bf;
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+}
+
+.brand-logo {
+  transition: all ease-in-out 300ms;
+  min-width: 100%;
+  text-align: center;
+}
+
+.tabs.tabs-transparent {
+  display: flex;
+}
+
+.tabs .tab {
+  flex-grow: 1;
+}
+
+header nav {
+  background: rgba(223,237,251,1);
+  background: -moz-linear-gradient(-45deg, rgba(223,237,251,1) 0%, rgba(46,157,255,1) 50%, rgba(213,231,251,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(223,237,251,1)), color-stop(50%, rgba(46,157,255,1)), color-stop(100%, rgba(213,231,251,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(223,237,251,1) 0%, rgba(46,157,255,1) 50%, rgba(213,231,251,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(223,237,251,1) 0%, rgba(46,157,255,1) 50%, rgba(213,231,251,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(223,237,251,1) 0%, rgba(46,157,255,1) 50%, rgba(213,231,251,1) 100%);
+  background: linear-gradient(135deg, rgba(223,237,251,1) 0%, rgba(46,157,255,1) 50%, rgba(213,231,251,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfedfb', endColorstr='#d5e7fb', GradientType=1 );
+}
+
+nav .brand-logo:hover {
+  background: rgba(76,76,76,1);
+  letter-spacing: 2px;
+}
+
+.tabs .tab a:hover {
+  background-color: #4b4b49;
+  color: #fff;
+}
+.tabs .tab a.active,
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: rgba(19, 251, 155, 0.72);
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.tabs .tab a.active:hover {
+  background-color: rgba(17, 175, 102, 0.59);
+}
+
+.tabs .tab a {
+  color: #000;
+  transition: all ease-in-out 200ms;
+}
+
+.nav-content {
+  margin-top: 20px;
+  box-shadow: 0px 1px 1px #000;
+}

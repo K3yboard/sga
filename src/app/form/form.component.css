@@ -1,0 +1,17 @@
+.row {
+  margin-bottom: 10px;
+}
+
+.btn-small.active {
+  transform: scale(1.2);
+  background: #1fd6c5;
+  letter-spacing: 2px;
+}
+
+.waves-effect:hover {
+  transition: all ease-in-out 300ms;
+}
+
+.links-nav a {
+  font-size: 12px;
+}

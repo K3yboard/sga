@@ -1,0 +1,15 @@
+img {
+  max-width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  display: block;
+  transition: all ease-in-out 300ms;
+  transform: scale(0.7);
+}
+img:hover {
+  transform: scale(1);
+  border: 1px solid #c9c9c7;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}

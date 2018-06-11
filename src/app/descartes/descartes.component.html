@@ -1,0 +1,17 @@
+<div class="row">
+  <h3 class="titulo-secao">Relação de descartes realizados</h3>
+  <div class="col s12 m6" *ngFor="let descarte of descartes">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">{{ descarte.NOME_EMPRESA }}</span>
+        <ul>
+          <li><strong>Documento:</strong> {{ descarte.NOME_DOCUMENTO }}</li>
+          <li><strong>Data da coleta:</strong> {{ descarte.DATA_COLETA }}</li>
+          <li><strong>Valor do descarte:</strong> {{ descarte.VALOR_TRANSACAO }}</li>
+          <li><strong>Tipo de material:</strong> {{ descarte.NOME_MATERIAL }}</li>
+          <li><strong>Quantidade:</strong> {{ descarte.QUANTIDADE_ITEM }} {{ descarte.DESCRICAO }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

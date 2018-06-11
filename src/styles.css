@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/reset.css');
+@import url('./assets/css/icons.css');
+@import url('./assets/css/base.css');
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+.main {
+  flex: 1 0 auto;
+}

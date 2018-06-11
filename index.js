@@ -1,15 +1,14 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const path = require('path');
 // const bodyParser = require('body-parser');
 const port = process.env.PORT || '8080';
 
 app.set('port', port);
-app.use(express.static(__dirname + '/dist/sga'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/[^\.]+$', function(req, res) {
-    res.set('Content-Type', 'text/html')
-        .sendFile(path.join(__dirname, '/dist/sga/index.html'))
+    res.sendFile(path.join(__dirname, '/dist/index.html'))
 });
 
 // app.use(bodyParser.urlencoded({ extended: true }));

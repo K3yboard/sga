@@ -1,0 +1,56 @@
+<div class="row">
+  <h5>Cadastro de empresas</h5>
+  <form #form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="nome-empresa"
+          type="text"
+          class="validate"
+          required
+          name="nome"
+          (input)="atualizarNomeEmpresa(nome.value)"
+          #nome>
+        <label for="nome-empresa">Nome da empresa</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="cnpj"
+          type="text"
+          class="validate"
+          required
+          name="cnpj"
+          (input)="atualizarCNPJ(cnpj.value)"
+          #cnpj>
+        <label for="cnpj">CNPJ</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="inscricao-municipal"
+          type="text"
+          class="validate"
+          required
+          name="inscricaoMunicipal"
+          (input)="atualizarInscricao(inscricao.value)"
+          #inscricao>
+        <label for="inscricao-municipal">Incrição Municipal</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="licensa"
+          type="text"
+          class="validate"
+          required
+          name="licensa"
+          (input)="atualizarLicensa(licensa.value)"
+          #licensa>
+        <label for="licensa">Licensa</label>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light"
+      type="submit"
+      (click)="adicionarEmpresa($event); form.reset()"
+      [disabled]="botao"
+    >Salvar
+      <i class="material-icons right">send</i>
+    </button>
+  </form>
+</div>

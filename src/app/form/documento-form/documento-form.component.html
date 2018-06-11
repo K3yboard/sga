@@ -1,0 +1,44 @@
+<div class="row">
+  <h5>Cadastro de documentos</h5>
+  <form #form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="tipo-documento"
+          type="text"
+          class="validate"
+          required
+          name="tipoDocumento"
+          (input)="atualizarTipoDocumento(tipoDocumento.value)"
+          #tipoDocumento>
+        <label for="tipo-documento">Tipo do documento</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="nome-documento"
+          type="text"
+          class="validate"
+          required
+          name="nomeDocumento"
+          (input)="atualizarNomeDocumento(nomeDocumento.value)"
+          #nomeDocumento>
+        <label for="nome-documento">Nome do documento</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="url"
+          type="text"
+          class="validate"
+          required
+          name="url"
+          (input)="atualizarUrl(url.value)"
+          #url>
+        <label for="url">URL do documento</label>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light"
+      type="submit"
+      (click)="salvar(); form.reset()"
+      [disabled]="botao"
+    >Salvar
+      <i class="material-icons right">send</i>
+    </button>
+  </form>
+</div>

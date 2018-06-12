@@ -3,13 +3,11 @@
   <a class="waves-effect waves-light btn" routerLink="/cadastro/material">Cadastrar novo material</a>
 </div>
 <div class="row">
-  <div class="col s12">
-    <div class="coleta-seletiva black-text">
-      <dl class="card" *ngFor="let material of materiais">
-        <dt>{{ material.TIPO_MATERIAL }}</dt>
-        <dd>{{ material.NOME_MATERIAL }}</dd>
-        <dd></dd>
-      </dl>
-    </div>
+  <div class="coleta-seletiva black-text">
+    <dl class="card" *ngFor="let material of materiais">
+      <dt>{{ material.TIPO_MATERIAL }}</dt>
+      <dd>{{ material.NOME_MATERIAL }}</dd>
+      <div class="valor">200 KG</div>
+    </dl>
   </div>
 </div>

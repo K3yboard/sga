@@ -20,7 +20,7 @@ export class AppService {
   private riscoBiologicolUrl = '/risco-biologico';
   private relacaoDescarteUrl = '/relacao-descarte';
   private documentoUrl = '/documento';
-  private contratoUrl ='/contrato'
+  private contratoUrl = '/contrato';
   private header = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Headers': 'Content-Type',

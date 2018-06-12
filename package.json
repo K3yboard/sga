@@ -9,6 +9,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
+    "build-dev": "ng serve --proxy-config proxy.config.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
